@@ -4,9 +4,11 @@ public class TestDrive {
     public static void main(String[] args) {
         // Use one algorithm in one calculation
         BiggerAlgorithm biggerAlgorithm1 = new BiggerAlgorithm(new Algorithm1());
+        biggerAlgorithm1.runAlgorithm();
 
         // Use another algorithm in different calculation
         BiggerAlgorithm biggerAlgorithm2 = new BiggerAlgorithm(new Algorithm2());
+        biggerAlgorithm2.runAlgorithm();
     }
 }
 
@@ -33,5 +35,9 @@ class BiggerAlgorithm {
 
     public BiggerAlgorithm(Algorithm algorithmToUse) {
         this.algo = algorithmToUse;
+    }
+
+    public void runAlgorithm() {
+        algo.sort();
     }
 }
