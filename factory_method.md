@@ -26,9 +26,7 @@ class UserPrefs {
     private static UserPrefs u;
     private String colour;
     
-    private UserPrefs() {
-        
-    }
+    private UserPrefs() { }
     
     public static UserPrefs get() {
         if (u == null) {
