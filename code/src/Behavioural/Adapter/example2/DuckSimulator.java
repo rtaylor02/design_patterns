@@ -2,8 +2,6 @@ package Behavioural.Adapter.example2;
 
 import Behavioural.Adapter.example1.Duck;
 import Behavioural.Adapter.example1.MallardDuck;
-import Behavioural.Adapter.example1.TurkeyAdapter;
-import Behavioural.Adapter.example1.WildTurkey;
 
 public class DuckSimulator {
     public static void main(String[] args) {
