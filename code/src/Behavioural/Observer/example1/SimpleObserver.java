@@ -12,14 +12,14 @@ public class SimpleObserver implements Observer {
     @Override
     public void update(int value) {
         this.value = value;
-        System.out.println(this);
     }
 
     @Override
     public String toString() {
-        return "SimpleObserver{" +
-                "subject=" + subject +
-                ", value=" + value +
-                '}';
+        return "SimpleObserver{" + this.hashCode() + ", value=" + value + "}";
+    }
+
+    public void stopObserving() {
+        subject.removeObserver(this);
     }
 }

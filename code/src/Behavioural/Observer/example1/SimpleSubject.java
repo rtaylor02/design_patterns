@@ -32,4 +32,10 @@ public class SimpleSubject implements Subject {
         this.value = value;
         notifyObservers();
     }
+
+    public void printObservers() {
+        for(Observer o : observers) {
+            System.out.println(o);
+        }
+    }
 }
